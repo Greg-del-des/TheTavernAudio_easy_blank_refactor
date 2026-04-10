@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{e3e4ee32-b731-4a5b-8027-9298d73b8f68}">
+		<property name="assetPath">
+			<value>amb/amb-fireplace.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>267</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ebad45cf-019c-46c8-9021-dc2081080a18}</destination>
+		</relationship>
+	</object>
+</objects>

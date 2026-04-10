@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{5873b17d-cea0-4e85-9468-b13786d05b9a}">
+		<property name="assetPath">
+			<value>amb/amb-foorest.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>106</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ebad45cf-019c-46c8-9021-dc2081080a18}</destination>
+		</relationship>
+	</object>
+</objects>
