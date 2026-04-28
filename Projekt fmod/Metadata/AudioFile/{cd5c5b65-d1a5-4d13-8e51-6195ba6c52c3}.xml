@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{cd5c5b65-d1a5-4d13-8e51-6195ba6c52c3}">
+		<property name="assetPath">
+			<value>jumps/landing stone.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ebad45cf-019c-46c8-9021-dc2081080a18}</destination>
+		</relationship>
+	</object>
+</objects>

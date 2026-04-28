@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8225331816355858162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Jump
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Jump
+  Guid:
+    Data1: -618540031
+    Data2: 1292944842
+    Data3: 755157130
+    Data4: -666539921
+  Banks:
+  - {fileID: 6487401999945629027}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1500
 --- !u!114 &-6758806379068290474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,7 +81,35 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 108000
---- !u!114 &-5346043628226657106
+--- !u!114 &-5045173678375756315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/footsteps
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/footsteps
+  Guid:
+    Data1: 1127372995
+    Data2: 1308390107
+    Data3: -1658694495
+    Data4: -1549019906
+  Banks:
+  - {fileID: 6487401999945629027}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -728682789514815761}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
+--- !u!114 &-4861056772039744948
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64,9 +119,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/footsteps-stone/footsteps  surface
+  m_Name: parameter:/landing/Footsteps_surface
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
-  Name: footsteps  surface
+  Name: Footsteps_surface
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 2547334531
+    data2: 209589749
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Stone
+  - Wood
+  - Stairs
+  Exists: 1
+--- !u!114 &-728682789514815761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/footsteps/Footsteps_surface
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: Footsteps_surface
   StudioPath: 
   Min: 0
   Max: 2
@@ -124,27 +206,36 @@ MonoBehaviour:
   - {fileID: 7159462915295898128}
   - {fileID: 6487401999945629027}
   EditorEvents:
-  - {fileID: 3873941647811108869}
   - {fileID: -313478675610083694}
   - {fileID: -6758806379068290474}
   - {fileID: -5543579483277039351}
+  - {fileID: -5045173678375756315}
+  - {fileID: -8225331816355858162}
+  - {fileID: 4878819154092620943}
+  - {fileID: 4320135225445564619}
   EditorParameters: []
   MasterBanks:
   - {fileID: 6487401999945629027}
   StringsBanks:
   - {fileID: 7159462915295898128}
   cacheVersion: 131859
-  cacheTime: 639126245629768856
+  cacheTime: 639129769669358658
   SerializableEventsDict:
-  - key: event:/footsteps-stone
-    index: 0
   - key: event:/amb3d/amb-fireplace
-    index: 1
+    index: 0
   - key: event:/amb3d/amb_forest
-    index: 2
+    index: 1
   - key: event:/amb3d/amb_tavern
+    index: 2
+  - key: event:/footsteps
     index: 3
---- !u!114 &3873941647811108869
+  - key: event:/Jump
+    index: 4
+  - key: event:/landing
+    index: 5
+  - key: event:/heartbeat
+    index: 6
+--- !u!114 &4320135225445564619
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -154,24 +245,51 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/footsteps-stone
+  m_Name: event:/heartbeat
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/footsteps-stone
+  Path: event:/heartbeat
   Guid:
-    Data1: 1127372995
-    Data2: 1308390107
-    Data3: -1658694495
-    Data4: -1549019906
+    Data1: 408615719
+    Data2: 1156312276
+    Data3: -56555902
+    Data4: -1431750692
+  Banks:
+  - {fileID: 6487401999945629027}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8668
+--- !u!114 &4878819154092620943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/landing
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/landing
+  Guid:
+    Data1: -1041825067
+    Data2: 1123813403
+    Data3: 929835910
+    Data4: -1152145701
   Banks:
   - {fileID: 6487401999945629027}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters:
-  - {fileID: -5346043628226657106}
+  - {fileID: -4861056772039744948}
   MinDistance: 1
   MaxDistance: 20
-  Length: 1000
+  Length: 500
 --- !u!114 &6487401999945629027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,10 +305,10 @@ MonoBehaviour:
   Path: Projekt fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639126245629748543
+  lastModified: 639129769669343521
   FileSizes:
   - Name: Desktop
-    Value: 5396256
+    Value: 5474944
   Exists: 1
 --- !u!114 &7159462915295898128
 MonoBehaviour:
@@ -207,8 +325,8 @@ MonoBehaviour:
   Path: Projekt fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639126245629768856
+  lastModified: 639129769669358658
   FileSizes:
   - Name: Desktop
-    Value: 998
+    Value: 1178
   Exists: 1
